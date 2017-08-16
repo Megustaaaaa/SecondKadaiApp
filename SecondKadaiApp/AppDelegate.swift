@@ -10,7 +10,16 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    private var viewVal: String = ""
+    var ViewVal: String {
+        get {
+            return viewVal //ラベルに表示する値を返す。
+        }
+        set {
+            viewVal = newValue //Textfildの値をここに設定する。
+        }
+    }
     var window: UIWindow?
 
 
